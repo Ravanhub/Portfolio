@@ -16,7 +16,7 @@ export class Home {
   downloadResume() {
   const link = document.createElement('a');
 
-  link.href = '/resume/saravanan_resume.pdf';
+  link.href = 'assets/resume/saravanan_resume.pdf';
 
   link.download = 'saravanan_resume.pdf';
 
