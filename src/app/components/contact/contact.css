@@ -405,3 +405,154 @@
     flex-wrap: wrap;
   }
 }
+/* MOBILE DEVICES */
+
+@media (max-width: 768px) {
+
+  .contact-section {
+    padding: 80px 20px;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .section-header {
+    margin-bottom: 50px;
+  }
+
+  .section-header h2 {
+    font-size: 2.5rem;
+  }
+
+  .section-header p {
+    font-size: 1rem;
+  }
+
+  .contact-info h3 {
+    font-size: 1.7rem;
+  }
+
+  .contact-form {
+    padding: 25px;
+  }
+
+  .message-box {
+    padding: 25px;
+  }
+
+  .message-box h4 {
+    font-size: 1.5rem;
+  }
+
+  .social-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .social-icons a {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+/* SMALL MOBILE DEVICES */
+
+@media (max-width: 480px) {
+
+  .contact-section {
+    padding: 60px 15px;
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
+  }
+
+  .section-header p {
+    font-size: 0.95rem;
+  }
+
+  .contact-info h3 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .info-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .icon-box {
+    width: 55px;
+    height: 55px;
+    font-size: 20px;
+  }
+
+  .info-card h4 {
+    font-size: 1rem;
+  }
+
+  .info-card span {
+    font-size: 0.9rem;
+    word-break: break-word;
+  }
+
+  .message-box {
+    padding: 20px;
+  }
+
+  .message-box h4 {
+    font-size: 1.3rem;
+  }
+
+  .message-box p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .contact-form {
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 14px;
+    font-size: 15px;
+  }
+
+  .send-btn {
+    padding: 16px;
+    font-size: 16px;
+  }
+
+  .footer {
+    margin-top: 60px;
+    font-size: 0.9rem;
+  }
+}
+
+/* EXTRA SMALL DEVICES */
+
+@media (max-width: 360px) {
+
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .social-icons a {
+    width: 50px;
+    height: 50px;
+  }
+
+  .icon-box {
+    width: 50px;
+    height: 50px;
+  }
+
+  .contact-form {
+    padding: 15px;
+  }
+}
