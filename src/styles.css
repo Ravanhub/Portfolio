@@ -1,0 +1,260 @@
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+/* =====================================
+   GLOBAL RESET
+===================================== */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =====================================
+   HTML & BODY
+===================================== */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* =====================================
+   IMAGE OPTIMIZATION
+===================================== */
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* =====================================
+   GPU ACCELERATION
+===================================== */
+
+.profile,
+.image-card,
+.background-blur,
+.particles span,
+.social-icons a,
+.download-btn,
+.learn-btn,
+.about-btn,
+.project-card,
+.skill-card,
+.stat-card,
+.timeline-card,
+.timeline-icon,
+.info-card,
+.message-box,
+.send-btn,
+.progress-fill,
+.reveal,
+.reveal-left,
+.reveal-right,
+.reveal-scale,
+.reveal-rotate {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* =====================================
+   SCROLL REVEAL ANIMATIONS
+===================================== */
+
+.reveal {
+  opacity: 0;
+  transform: translate3d(0, 80px, 0);
+  transition:
+    opacity .9s ease,
+    transform .9s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* =====================================
+   LEFT REVEAL
+===================================== */
+
+.reveal-left {
+  opacity: 0;
+  transform: translate3d(-120px, 0, 0);
+  transition:
+    opacity .9s ease,
+    transform .9s ease;
+}
+
+.reveal-left.show {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* =====================================
+   RIGHT REVEAL
+===================================== */
+
+.reveal-right {
+  opacity: 0;
+  transform: translate3d(120px, 0, 0);
+  transition:
+    opacity .9s ease,
+    transform .9s ease;
+}
+
+.reveal-right.show {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* =====================================
+   SCALE REVEAL
+===================================== */
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(.7);
+  transition:
+    opacity .8s ease,
+    transform .8s ease;
+}
+
+.reveal-scale.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* =====================================
+   ROTATE REVEAL
+===================================== */
+
+.reveal-rotate {
+  opacity: 0;
+  transform: rotate(10deg) scale(.8);
+  transition:
+    opacity .8s ease,
+    transform .8s ease;
+}
+
+.reveal-rotate.show {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+
+/* =====================================
+   DELAY HELPERS
+===================================== */
+
+.delay1 {
+  transition-delay: .1s;
+}
+
+.delay2 {
+  transition-delay: .2s;
+}
+
+.delay3 {
+  transition-delay: .3s;
+}
+
+.delay4 {
+  transition-delay: .4s;
+}
+
+.delay5 {
+  transition-delay: .5s;
+}
+
+/* =====================================
+   ACCESSIBILITY
+===================================== */
+
+:focus-visible {
+  outline: 2px solid #111;
+  outline-offset: 3px;
+}
+
+/* =====================================
+   SMOOTH HOVER PERFORMANCE
+===================================== */
+
+button,
+a,
+.card,
+.project-card,
+.skill-card,
+.timeline-card,
+.stat-card,
+.info-card {
+  transition:
+    transform .35s ease,
+    box-shadow .35s ease,
+    background-color .35s ease,
+    color .35s ease;
+}
+
+/* =====================================
+   REDUCE MOTION
+===================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* =====================================
+   MOBILE PERFORMANCE BOOST
+===================================== */
+
+@media (max-width: 768px) {
+
+  .particles {
+    display: none !important;
+  }
+
+  .background-blur {
+    animation: none !important;
+    filter: blur(60px) !important;
+  }
+
+  .reveal,
+  .reveal-left,
+  .reveal-right,
+  .reveal-scale,
+  .reveal-rotate {
+    transition-duration: .6s;
+  }
+}
+
+/* =====================================
+   LARGE SCREEN OPTIMIZATION
+===================================== */
+
+@media (min-width: 1200px) {
+
+  .background-blur {
+    filter: blur(80px);
+  }
+}

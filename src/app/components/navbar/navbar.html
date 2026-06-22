@@ -1,0 +1,49 @@
+<nav>
+
+    <!-- Logo -->
+    <div class="logo">
+        <img
+        src="assets/images/logo.webp"
+        alt="logo"
+        width="60"
+        height="60">
+    </div>
+
+    <!-- Desktop Menu -->
+    <div class="desktop-menu">
+
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+
+    </div>
+
+    <!-- Menu Button -->
+
+<div class="menu-btn"
+    [class.open]="menuOpen"
+    (click)="toggleMenu()">
+
+    <span></span>
+    <span></span>
+    <span></span>
+
+</div>
+
+</nav>
+
+<!-- Dropdown -->
+
+<div class="mobile-menu" [class.active]="menuOpen">
+
+    <a href="#home" (click)="closeMenu()">Home</a>
+    <a href="#about" (click)="closeMenu()">About</a>
+    <a href="#skills" (click)="closeMenu()">Skills</a>
+    <a href="#projects" (click)="closeMenu()">Projects</a>
+    <a href="#experience" (click)="closeMenu()">Experience</a>
+    <a href="#contact" (click)="closeMenu()">Contact</a>
+
+</div>
