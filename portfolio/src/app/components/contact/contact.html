@@ -1,0 +1,186 @@
+<section class="contact-section">
+
+  <!-- HEADER -->
+
+  <div
+    class="section-header reveal"
+    appScrollReveal>
+
+    <h2>Get In Touch</h2>
+
+    <div class="underline"></div>
+
+    <p>
+      Have a project in mind or want to collaborate?
+      I'd love to hear from you.
+    </p>
+
+  </div>
+
+  <div class="contact-container">
+
+    <!-- LEFT -->
+
+    <div
+      class="contact-info reveal-left"
+      appScrollReveal>
+
+      <h3>Contact Information</h3>
+
+      <div class="info-card" >
+
+        <div class="icon-box">
+          <i class="fas fa-envelope"></i>
+        </div>
+
+        <div>
+          <span>Email</span>
+          <h4>saravanandurai938@gmail.com</h4>
+        </div>
+
+      </div>
+
+      <div class="info-card">
+
+        <div class="icon-box">
+          <i class="fas fa-phone"></i>
+        </div>
+
+        <div>
+          <span>Phone</span>
+          <h4>+91 9788498375</h4>
+        </div>
+
+      </div>
+
+      <div class="info-card">
+
+        <div class="icon-box">
+          <i class="fas fa-location-dot"></i>
+        </div>
+
+        <div>
+          <span>Location</span>
+          <h4>Tamil Nadu, India</h4>
+        </div>
+
+      </div>
+
+      <h3 class="follow-title">
+        Follow Me
+      </h3>
+
+      <div class="social-icons">
+
+        <a href="https://github.com/Ravanhub" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/saravanandurai" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+
+        <a href="https://twitter.com/saravanandurai" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-twitter"></i>
+        </a>
+
+      </div>
+
+      <div class="message-box">
+
+        <h4>Let's Build Something Amazing</h4>
+
+        <p>
+          I'm always interested in hearing about
+          exciting projects, innovative ideas and
+          collaboration opportunities.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- RIGHT -->
+
+    <div
+      class="contact-form reveal-right"
+      appScrollReveal>
+
+      <form (ngSubmit)="sendMessage()">
+
+        <div class="form-group">
+
+          <label>Name</label>
+
+          <input
+            type="text"
+            name="name"
+            [(ngModel)]="formData.name"
+            placeholder="Your Name">
+
+        </div>
+
+        <div class="form-group">
+
+          <label>Email</label>
+
+          <input
+            type="email"
+            name="email"
+            [(ngModel)]="formData.email"
+            placeholder="your.email@example.com">
+
+        </div>
+
+        <div class="form-group">
+
+          <label>Subject</label>
+
+          <input
+            type="text"
+            name="subject"
+            [(ngModel)]="formData.subject"
+            placeholder="Project Discussion">
+
+        </div>
+
+        <div class="form-group">
+
+          <label>Message</label>
+
+          <textarea
+            rows="6"
+            name="message"
+            [(ngModel)]="formData.message"
+            placeholder="Tell me about your project...">
+          </textarea>
+
+        </div>
+
+    <button
+  type="submit"
+  class="send-btn"
+  [disabled]="isSending">
+
+  <i class="fas fa-paper-plane"></i>
+
+  {{ isSending ? 'Sending...' : 'Send Message' }}
+
+</button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+  <div
+    class="footer reveal"
+    appScrollReveal>
+
+    © 2026 Saravanan Durai.
+    Built with Angular 21.
+
+  </div>
+
+</section>
