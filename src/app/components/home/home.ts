@@ -16,9 +16,9 @@ export class Home {
   downloadResume() {
   const link = document.createElement('a');
 
-  link.href = '/resume/SARAVANAN .pdf';
+  link.href = '/resume/saravanan_resume.pdf';
 
-  link.download = 'SARAVANAN .pdf';
+  link.download = 'saravanan_resume.pdf';
 
   link.click();
 }
